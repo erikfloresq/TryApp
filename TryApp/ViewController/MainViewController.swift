@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var chatContainer: UIView!
+    var demoModel: DemoModel = DemoModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class MainViewController: UIViewController {
     }
 
     func loadChatViewController() {
-        let chatVC = ChatViewController()
+        let chatVC = ChatViewController(demoModel: demoModel)
         addChild(chatVC)
         chatVC.view.frame = chatContainer.bounds
         chatContainer.addSubview(chatVC.view)

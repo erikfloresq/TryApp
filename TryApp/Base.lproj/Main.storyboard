@@ -20,8 +20,18 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btq-44-ZfG">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjA-eE-4gX">
+                                                <rect key="frame" x="127" y="30" width="160.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="zjA-eE-4gX" firstAttribute="centerY" secondItem="Btq-44-ZfG" secondAttribute="centerY" id="Mnb-Oi-IXi"/>
+                                            <constraint firstItem="zjA-eE-4gX" firstAttribute="centerX" secondItem="Btq-44-ZfG" secondAttribute="centerX" id="T07-T7-W98"/>
                                             <constraint firstAttribute="height" constant="80" id="e0g-Oe-1Rb"/>
                                         </constraints>
                                     </view>

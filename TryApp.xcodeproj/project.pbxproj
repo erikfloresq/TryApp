@@ -22,6 +22,7 @@
 		939B22A72460B5FC00DC8E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939B22A52460B5FC00DC8E1D /* Main.storyboard */; };
 		939B22A92460B5FE00DC8E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939B22A82460B5FE00DC8E1D /* Assets.xcassets */; };
 		939B22AC2460B5FE00DC8E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939B22AA2460B5FE00DC8E1D /* LaunchScreen.storyboard */; };
+		93A4ABD62473468C00C190EB /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4ABD52473468C00C190EB /* DemoModel.swift */; };
 		93AD81FB2469D495002B8BF1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD81FA2469D495002B8BF1 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		939B22A82460B5FE00DC8E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		939B22AB2460B5FE00DC8E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939B22AD2460B5FE00DC8E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4ABD52473468C00C190EB /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 		93AD81FA2469D495002B8BF1 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 		939B229E2460B5FC00DC8E1D /* TryApp */ = {
 			isa = PBXGroup;
 			children = (
+				93A4ABD42473467C00C190EB /* Model */,
 				938584652469CD5E007E26FD /* ViewController */,
 				9385845E2469BE0A007E26FD /* Extension */,
 				9385845D2469BDE0007E26FD /* View */,
@@ -143,6 +146,14 @@
 				939B22AD2460B5FE00DC8E1D /* Info.plist */,
 			);
 			path = TryApp;
+			sourceTree = "<group>";
+		};
+		93A4ABD42473467C00C190EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93A4ABD52473468C00C190EB /* DemoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				938584602469C940007E26FD /* MainView.swift in Sources */,
 				93AD81FB2469D495002B8BF1 /* ChatViewController.swift in Sources */,
 				939B22A02460B5FC00DC8E1D /* AppDelegate.swift in Sources */,
+				93A4ABD62473468C00C190EB /* DemoModel.swift in Sources */,
 				9385846B2469CDBA007E26FD /* MainTableViewDelegate.swift in Sources */,
 				938584622469C9D8007E26FD /* UIView.swift in Sources */,
 				9385845A2469A35E007E26FD /* MainTableView.swift in Sources */,

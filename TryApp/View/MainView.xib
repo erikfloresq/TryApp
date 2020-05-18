@@ -27,7 +27,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="mainTableView" destination="e3T-Sf-Cck" id="EFl-Qk-CWA"/>
+                <outlet property="mainTableView" destination="e3T-Sf-Cck" id="2Gq-Mb-nrD"/>
             </connections>
             <point key="canvasLocation" x="133" y="153"/>
         </view>
