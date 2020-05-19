@@ -10,20 +10,19 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var chatContainer: UIView!
-    var demoModel: DemoModel = DemoModel()
+    let mainView = MainView.loadFromNib()
+    var demoModel = DemoModel()
+    lazy var demoViewModel: MainViewModel = MainViewModel(demoModel: demoModel)
+
+    override func loadView() {
+        view = mainView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadChatViewController()
-    }
-
-    func loadChatViewController() {
-        let chatVC = ChatViewController(demoModel: demoModel)
-        addChild(chatVC)
-        chatVC.view.frame = chatContainer.bounds
-        chatContainer.addSubview(chatVC.view)
-        chatVC.didMove(toParent: self)
+        title = "Try App"
+        navigationController?.navigationBar.prefersLargeTitles =  true
+        demoViewModel.getData()
     }
 
 }
