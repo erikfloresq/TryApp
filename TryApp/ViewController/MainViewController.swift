@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  TryApp
 //
-//  Created by Erik Flores Quispe on 5/4/20.
+//  Created by Erik Flores on 5/4/20.
 //  Copyright © 2020 PedidosYa. All rights reserved.
 //
 
