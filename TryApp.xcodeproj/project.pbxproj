@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082F69D12473E60D000C52B2 /* Please in Frameworks */ = {isa = PBXBuildFile; productRef = 082F69D02473E60D000C52B2 /* Please */; };
 		938584562469A315007E26FD /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938584552469A314007E26FD /* MainView.xib */; };
 		938584582469A347007E26FD /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938584572469A347007E26FD /* MainTableViewCell.xib */; };
 		9385845A2469A35E007E26FD /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938584592469A35E007E26FD /* MainTableView.swift */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082F69D12473E60D000C52B2 /* Please in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +174,9 @@
 			dependencies = (
 			);
 			name = TryApp;
+			packageProductDependencies = (
+				082F69D02473E60D000C52B2 /* Please */,
+			);
 			productName = TryApp;
 			productReference = 939B229C2460B5FC00DC8E1D /* TryApp.app */;
 			productType = "com.apple.product-type.application";
@@ -200,6 +205,9 @@
 				Base,
 			);
 			mainGroup = 939B22932460B5FC00DC8E1D;
+			packageReferences = (
+				082F69CF2473E60D000C52B2 /* XCRemoteSwiftPackageReference "Please" */,
+			);
 			productRefGroup = 939B229D2460B5FC00DC8E1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -442,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		082F69CF2473E60D000C52B2 /* XCRemoteSwiftPackageReference "Please" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:erikfloresq/Please.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		082F69D02473E60D000C52B2 /* Please */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 082F69CF2473E60D000C52B2 /* XCRemoteSwiftPackageReference "Please" */;
+			productName = Please;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 939B22942460B5FC00DC8E1D /* Project object */;
 }

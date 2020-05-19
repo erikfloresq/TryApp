@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Please",
+        "repositoryURL": "git@github.com:erikfloresq/Please.git",
+        "state": {
+          "branch": null,
+          "revision": "e92eb7d0e28dda96f50e8ef1cca7357fabdf0675",
+          "version": "0.0.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
