@@ -29,7 +29,7 @@ class LoaderView: UIView {
         self.addInAnimation(to: activity)
     }
 
-    func addInAnimation(to view: UIView) {
+    private func addInAnimation(to view: UIView) {
         let inAnimator = UIViewPropertyAnimator(duration: 1, dampingRatio: 0.3)
         inAnimator.addAnimations {
             view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
@@ -38,7 +38,7 @@ class LoaderView: UIView {
         inAnimator.startAnimation()
     }
 
-    func addOutAnimation(to view: UIView) {
+    private func addOutAnimation(to view: UIView) {
         let outAnimator = UIViewPropertyAnimator(duration: 2, dampingRatio: 0.3)
         outAnimator.addAnimations {
             view.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
