@@ -1,5 +1,5 @@
 //
-//  DemoModel.swift
+//  MainModel.swift
 //  TryApp
 //
 //  Created by Erik Flores on 5/18/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct DemoModel {
-    var data: [String] = ["Demo 1", "Demo 2", "Demo 3", "Demo 4"]
+struct MainModel {
+    var data: [Character] = []
 }

@@ -10,14 +10,14 @@ import UIKit
 
 class MainTableViewDataSource: NSObject, UITableViewDataSource {
 
-    var demoModel : DemoModel
+    var mainViewModel : MainViewModel
 
-    init(demoModel: DemoModel) {
-        self.demoModel = demoModel
+    init(mainViewModel: MainViewModel) {
+        self.mainViewModel = mainViewModel
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return demoModel.data.count
+        return mainViewModel.dataCount
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,7 +25,7 @@ class MainTableViewDataSource: NSObject, UITableViewDataSource {
         guard let mainViewCell = cellDequeue as? MainTableViewCell else {
             return UITableViewCell()
         }
-        mainViewCell.bind(title: "random \(indexPath.row)")
+        mainViewCell.bind(title: mainViewModel.getName(from: indexPath))
         return mainViewCell
     }
 }

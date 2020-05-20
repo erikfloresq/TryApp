@@ -11,8 +11,10 @@ import UIKit
 class MainViewController: UIViewController {
 
     let mainView = MainView.loadFromNib()
-    var demoModel = DemoModel()
-    lazy var demoViewModel: MainViewModel = MainViewModel(demoModel: demoModel)
+    var mainModel = MainModel()
+    lazy var mainViewModel: MainViewModel = MainViewModel(mainModel: mainModel)
+    lazy var tableViewDataSource = MainTableViewDataSource(mainViewModel: mainViewModel)
+    lazy var tableViewDelegate = MainTableViewDelegate()
 
     override func loadView() {
         view = mainView
@@ -22,7 +24,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         title = "Try App"
         navigationController?.navigationBar.prefersLargeTitles =  true
-        demoViewModel.getData()
+        mainView.mainTableView.dataSource = tableViewDataSource
+        mainView.mainTableView.delegate = tableViewDelegate
+        mainViewModel.getData {
+            DispatchQueue.main.async {
+                self.mainView.mainTableView.reloadData()
+            }
+        }
     }
 
 }

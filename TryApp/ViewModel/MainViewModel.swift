@@ -9,14 +9,27 @@
 import Foundation
 import Please
 
-struct MainViewModel {
+class MainViewModel {
 
-    var demoModel: DemoModel
+    private var mainModel: MainModel
 
-    func getData() {
+    init(mainModel: MainModel) {
+        self.mainModel = mainModel
+    }
+
+    var dataCount: Int {
+        return mainModel.data.count
+    }
+
+    func getName(from indexPath: IndexPath) -> String {
+        return mainModel.data[indexPath.row].name
+    }
+
+    func getData(completionHandler: @escaping () -> Void) {
         let apiURL = URL(string: API.characters)!
         Please.getData(from: apiURL, as: APIResponse.self) { (response) in
-            print("test name \(String(describing: response.results.first?.name))")
+            self.mainModel.data = response.results
+            completionHandler()
         }
     }
 
