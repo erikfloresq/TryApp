@@ -13,6 +13,8 @@
 		082F69DD2473E9DF000C52B2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F69DA2473E9DE000C52B2 /* APIResponse.swift */; };
 		082F69DE2473E9DF000C52B2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F69DB2473E9DF000C52B2 /* Character.swift */; };
 		082F69DF2473E9DF000C52B2 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082F69DC2473E9DF000C52B2 /* Info.swift */; };
+		931DA07024771282009A8DC4 /* DemoUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DA06F24771282009A8DC4 /* DemoUIViewController.swift */; };
+		931DA07224771322009A8DC4 /* ButtonActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DA07124771322009A8DC4 /* ButtonActions.swift */; };
 		938584562469A315007E26FD /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938584552469A314007E26FD /* MainView.xib */; };
 		938584582469A347007E26FD /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938584572469A347007E26FD /* MainTableViewCell.xib */; };
 		9385845A2469A35E007E26FD /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938584592469A35E007E26FD /* MainTableView.swift */; };
@@ -37,6 +39,8 @@
 		082F69DA2473E9DE000C52B2 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		082F69DB2473E9DF000C52B2 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		082F69DC2473E9DF000C52B2 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		931DA06F24771282009A8DC4 /* DemoUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUIViewController.swift; sourceTree = "<group>"; };
+		931DA07124771322009A8DC4 /* ButtonActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActions.swift; sourceTree = "<group>"; };
 		938584552469A314007E26FD /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		938584572469A347007E26FD /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		938584592469A35E007E26FD /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				939B22A32460B5FC00DC8E1D /* MainViewController.swift */,
+				931DA06F24771282009A8DC4 /* DemoUIViewController.swift */,
+				931DA07124771322009A8DC4 /* ButtonActions.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931DA07024771282009A8DC4 /* DemoUIViewController.swift in Sources */,
+				931DA07224771322009A8DC4 /* ButtonActions.swift in Sources */,
 				939B22A42460B5FC00DC8E1D /* MainViewController.swift in Sources */,
 				938584602469C940007E26FD /* MainView.swift in Sources */,
 				939B22A02460B5FC00DC8E1D /* AppDelegate.swift in Sources */,
